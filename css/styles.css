@@ -191,6 +191,9 @@ section.team {
 .team-item {
   width: calc((100%-3 * 30px) / 4);
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 .team-item:last-child {
   margin-right: 0;
@@ -199,6 +202,7 @@ section.team {
   padding: 30px 0;
   background-color: var(--primary-white-color);
   text-align: center;
+
 }
 .team .card-header {
   margin-bottom: 10px;
