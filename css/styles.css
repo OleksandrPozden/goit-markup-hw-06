@@ -71,9 +71,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.icon{
-  fill: currentColor;
-}
 .logo-dark > span {
   color: var(--full-dark);
 }
@@ -174,18 +171,18 @@ body {
 .feature-description {
   color: var(--secondary-dark-color);
   line-height: 1.7;
+  letter-spacing: 0.03em;
+
 }
 
 .section-header {
+  margin-bottom: 50px;
   font-size: 36px;
   text-align: center;
   line-height: 1.17;
 }
 section.occupation {
   padding-top: 0;
-}
-.occupation-header {
-  margin-bottom: 50px;
 }
 .occupation-list {
   display: flex;
@@ -216,7 +213,7 @@ section.team {
   margin-right: 0;
 }
 .team .card-body {
-  padding: 30px 0;
+  padding: 30px 32px;
   background-color: var(--primary-white-color);
   text-align: center;
 
@@ -227,6 +224,7 @@ section.team {
   font-weight: 500;
 }
 .team .card-description {
+  margin-bottom: 10px;
   color: var(--secondary-dark-color);
   font-size: 16px;
 }
@@ -310,4 +308,92 @@ section.team {
 .footer {
   padding: 60px 0;
   background-color: var(--tertiary-dark-color);
+}
+
+.contact-icon{
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+.contact-icon.email{
+  width: 16px;
+  height: 12px;
+}
+.contact-icon.phone{
+  width: 10px;
+  height: 16px;
+}
+.feature-decor{
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--secondary-white-color);
+}
+.feature-decor .icon{
+  width: 70px;
+  height: 70px;
+}
+.social-links{
+  display: flex;
+  justify-content: space-between;
+}
+.social-link{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  color: #AFB1B8;
+  text-decoration: none;
+}
+.social-link:hover{
+  color: var(--primary-white-color);
+  background-color: var(--primary-color);
+}
+.social-link .icon{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.clients .logo-items{
+  display: flex;
+  justify-content: space-between;
+}
+.clients .logo-item{
+  display: inline-block;
+  padding: 16px 32px;
+  color: #AFB1B8;
+  border: solid 1px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.clients .icon{
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+.clients .logo-item:hover{
+  color: var(--primary-color);
+}
+
+.social .feature-header{
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.social{
+  width: 206px;
+  height: 80px;
+  margin-top: 12px;
+}
+.social .social-link{
+  background-color: rgb(var(--primary-white-color-rgb), 0.1);
+  color: white;
+}
+.footer-wrapper{
+  display: flex;
+}
+.address{
+  margin-right: 70px;
+}
+.social .social-link:hover{
+  background-color: var(--primary-color);
 }

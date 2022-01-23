@@ -27,13 +27,19 @@
           </ul>
           <ul class="info-bar list">
             <li class="item">
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="contact link" href="mailto:info@devstudio.com">
+                <svg class="contact-icon email">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="item">
-              <a class="contact link" href="tel:096-111-11-11"
-                >+38 096 111 11 11</a
+              <a class="contact link" href="tel:096-111-11-11">
+                <svg class="contact-icon phone">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -177,32 +183,62 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo logo-white" href="#">Web<span>Studio</span></a>
-        <address>
-          <ul class="info-footer list">
-            <li class="item">
-              <a
-                class="address link"
-                href="https://www.google.com/maps/search/?api=1&query=Lesi+Ukrainky+Blvd,+26,+Kyiv"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="item">
-              <a
-                class="footer-contact contact link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a class="footer-contact contact link" href="tel:096-111-11-11"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer-wrapper">
+          <div class="address">
+            <a class="logo logo-white" href="#">Web<span>Studio</span></a>
+            <address>
+              <ul class="info-footer list">
+                <li class="item">
+                  <a
+                    class="address link"
+                    href="https://www.google.com/maps/search/?api=1&query=Lesi+Ukrainky+Blvd,+26,+Kyiv"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    class="footer-contact contact link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    class="footer-contact contact link"
+                    href="tel:096-111-11-11"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social">
+            <h3 class="feature-header">присоединяйтесь</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg class="icon">
+                  <use href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="icon">
+                  <use href="images/sprite.svg#twitter"></use>
+                </svg> </a
+              ><a href="#" class="social-link">
+                <svg class="icon">
+                  <use href="images/sprite.svg#facebook"></use>
+                </svg> </a
+              ><a href="#" class="social-link">
+                <svg class="icon">
+                  <use href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
