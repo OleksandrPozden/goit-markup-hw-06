@@ -65,7 +65,7 @@ body {
   font-size: 26px;
   text-decoration: none;
 }
-.test-button{
+.test-button {
   background-image: url(../images/envelope.svg);
   width: 40px;
   height: 40px;
@@ -93,10 +93,10 @@ body {
 .info-bar .item + .item {
   margin-left: 50px;
 }
-.nav-bar .item{
+.nav-bar .item {
   position: relative;
 }
-.nav-bar .item .active::before{
+.nav-bar .item .active::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -136,7 +136,11 @@ body {
 .hero {
   padding: 200px 0;
   background-color: var(--tertiary-dark-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/main/background-hero-image.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main/background-hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -185,7 +189,6 @@ body {
   color: var(--secondary-dark-color);
   line-height: 1.7;
   letter-spacing: 0.03em;
-
 }
 
 .section-header {
@@ -208,7 +211,7 @@ section.occupation {
 .occupation-item:last-child {
   margin-right: 0;
 }
-.label-overlay{
+.label-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -216,7 +219,7 @@ section.occupation {
   padding: 27px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.label-header{
+.label-header {
   text-align: center;
   color: var(--primary-white-color);
 }
@@ -231,7 +234,8 @@ section.team {
 .team-item {
   width: calc((100%-3 * 30px) / 4);
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   overflow: hidden;
 }
@@ -242,7 +246,6 @@ section.team {
   padding: 30px 32px;
   background-color: var(--primary-white-color);
   text-align: center;
-
 }
 .team .card-header {
   margin-bottom: 10px;
@@ -265,8 +268,9 @@ section.team {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list .item:hover,
-.projects-list .item:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-list .item:nth-child(3n) {
   margin-right: 0;
@@ -293,11 +297,11 @@ section.team {
   font-size: 16px;
   line-height: 1.875;
 }
-.project-thumb{
+.project-thumb {
   position: relative;
   overflow: hidden;
 }
-.project-overlay{
+.project-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -306,9 +310,8 @@ section.team {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-.project-description{
+.project-description {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -317,7 +320,7 @@ section.team {
   font-size: 18px;
   line-height: 1.56;
 }
-.projects-list .item:hover .project-overlay{
+.projects-list .item:hover .project-overlay {
   transform: translateY(0%);
 }
 .filters-list {
@@ -335,8 +338,8 @@ section.team {
   padding: 6px 22px;
   background-color: var(--secondary-white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn.active,
 .filter-btn:hover,
@@ -367,101 +370,101 @@ section.team {
   background-color: var(--tertiary-dark-color);
 }
 
-.contact-icon{
+.contact-icon {
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
 }
-.contact-icon.email{
+.contact-icon.email {
   width: 16px;
   height: 12px;
 }
-.contact-icon.phone{
+.contact-icon.phone {
   width: 10px;
   height: 16px;
 }
-.feature-decor{
+.feature-decor {
   margin-bottom: 30px;
   padding: 25px 100px;
   background-color: var(--secondary-white-color);
 }
-.feature-decor .icon{
+.feature-decor .icon {
   width: 70px;
   height: 70px;
 }
-.social-links{
+.social-links {
   display: flex;
   justify-content: space-between;
 }
-.social-link{
+.social-link {
   display: inline-block;
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;
-  color: #AFB1B8;
+  color: #afb1b8;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
-.social-link:focus{
+.social-link:focus {
   color: var(--primary-white-color);
   background-color: var(--primary-color);
 }
-.social-link .icon{
+.social-link .icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.clients .logo-items{
+.clients .logo-items {
   display: flex;
   justify-content: space-between;
 }
-.clients .logo-item{
+.clients .logo-item {
   display: inline-block;
   padding: 16px 32px;
-  color: #AFB1B8;
+  color: #afb1b8;
   border: solid 1px;
   border-radius: 4px;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients .icon{
+.clients .icon {
   fill: currentColor;
   width: 106px;
   height: 60px;
 }
 .clients .logo-item:hover,
-.clients .logo-item:focus{
+.clients .logo-item:focus {
   color: var(--primary-color);
 }
 
-.social .feature-header{
+.social .feature-header {
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-.social{
+.social {
   width: 206px;
   height: 80px;
   margin-top: 12px;
 }
-.social .social-link{
+.social .social-link {
   background-color: rgb(var(--primary-white-color-rgb), 0.1);
   color: white;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
 }
-.address{
+.address {
   margin-right: 70px;
 }
 .social .social-link:hover,
-.social .social-link:focus{
+.social .social-link:focus {
   background-color: var(--primary-color);
 }
-.backdrop{
+.backdrop {
   position: absolute;
   top: 0;
   left: 0;
@@ -470,38 +473,37 @@ section.team {
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms ease-out;
 }
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
   border-radius: 10px;
   background-color: var(--primary-white-color);
   transform-origin: center;
   transition: transform 250ms ease-out;
-
 }
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop.is-hidden .modal{
-  transform: translate(-50%,-50%) scale(0.9);
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
-.modal .button-close{
+.modal .button-close {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   padding: 5px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: none;
-  background-image: url('/images/close-button.svg');
+  background-image: url("/images/close-button.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
